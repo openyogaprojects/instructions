@@ -124,13 +124,19 @@ service nginx restart
 ### Шаг 11. Изменение TXT и A записи DNS
 
 11.1 Зайти на openyogaclass.com/cpanel через браузер
+
 11.2 Кликнуть по пункту "Advanced Zone Editor"
+
 11.3 В открывшейся вкладке выберите домен openyogaclass.com
+
 11.4 В открывшейся вкладке найдите А-записи guru.openyogaclass.com. и www.guru.openyogaclass.com. и измените ip адрес на новый
+
 11.5 Найдите TXT-запись, в которой присутствует строка spf.google.com, и добавьте туда ip адрес нового сервера.
     Примерно, это должно выглядеть так:
+    
     Было:
     v=spf1 ptr mx ip4:198.57.247.184 ip4:51.15.47.41 ip4:51.15.40.248 include:_spf.google.com ~all
+    
     Стало:
     v=spf1 ptr mx ip4:198.57.247.184 ip4:51.15.47.41 ip4:51.15.40.248 ip4:51.15.122.178 include:_spf.google.com ~all
 
