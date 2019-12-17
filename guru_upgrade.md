@@ -17,7 +17,8 @@ add-apt-repository ppa:certbot/certbot
 ```
 apt update && apt install -y git nginx php-fpm php-xml php-curl \
 php-mysql php-zip php-intl php-mbstring php-xmlrpc php-gd php-soap \ 
-mysql-server software-properties-common certbot python-certbot-nginx
+mysql-server software-properties-common certbot python-certbot-nginx \
+graphviz ghostscript aspell
  ```
  
 ### Шаг 3. Скачивание новой версии moodle.
