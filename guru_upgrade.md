@@ -108,7 +108,6 @@ mysql -u root -p moodle < /moodle.sql
 На новом сервере:
 ```
 chown -R www-data. /var/moodledata
-chown -R www-data. /var/www/moodle
 ln -s /etc/nginx/sites-available/guru.openyogaclass.com.conf /etc/nginx/sites-enabled/
 rm -f /var/www/moodle/install.php
 service nginx restart
