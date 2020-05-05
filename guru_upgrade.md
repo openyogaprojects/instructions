@@ -101,6 +101,7 @@ CREATE DATABASE moodle DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;
 CREATE USER 'moodle'@'localhost' IDENTIFIED BY 'Absolut777';
 GRANT ALL PRIVILEGES ON moodle.* TO 'moodle'@'localhost' IDENTIFIED BY 'Absolut777';
 FLUSH PRIVILEGES;
+exit
 mysql -u root -p moodle < /moodle.sql
 ```
 
